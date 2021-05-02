@@ -13,6 +13,29 @@ const rl = readline.createInterface({
 
 // the function that will be called by the unit test below
 const rockPaperScissors = (hand1, hand2) => {
+  hand1 = hand1.toLowerCase().trim()
+  hand2 = hand2.toLowerCase().trim()
+ 
+  if(hand1 === hand2) {
+    return "It's a tie!"
+  }
+
+
+  if(hand1 === 'rock' &&  hand2 === 'paper') {
+    return "Hand two wins!"
+  } 
+  else if(hand1 === 'paper' && hand2 === 'scissors') {
+    return "Hand two wins!"
+  }
+  else if(hand1 === 'rock' && hand2 === 'scissors') {
+    return "Hand one wins!"
+  }
+
+
+
+ 
+
+ //use the string method trim() along iwth the string method toLowercase();
 
   // Write code here
   // Use the unit test to see what is expected
